@@ -35,10 +35,12 @@ function handleHeadingClick() {
     if (currentText === "You clicked me!") { // Use === for comparison
       // If it is, change it back to the original text we stored
       headingElement.textContent = originalHeadingText;
-      console.log("Heading text reverted to original.");
+      headingElement.style.backgroundColor = '';
+      console.log("Heading style reverted");
     } else {
       // Otherwise (if it's the original text), change it to the 'clicked' state
       headingElement.textContent = "You clicked me!";
-      console.log("Heading text changed to clicked state.");
+      headingElement.style.backgroundColor = 'lightcoral';
+      console.log("Heading Style Changed");
     }
   }
