@@ -44,3 +44,16 @@ function handleHeadingClick() {
       console.log("Heading Style Changed");
     }
   }
+
+
+let mySkills = ["HTML", "CSS", "Git", "JavaScript Basics"];
+console.log("All of my skills:", mySkills);
+console.log("First Skill:", mySkills[0]);
+console.log("No. of skills", mySkills.length);
+console.log("Last Skill:", mySkills[mySkills.length-1]);
+
+mySkills[3] = "JavaScript"
+console.log("All of my skills:", mySkills);
+console.log("First Skill:", mySkills[0]);
+console.log("No. of skills", mySkills.length);
+console.log("Last Skill:", mySkills[mySkills.length-1]);
