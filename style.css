@@ -1,0 +1,38 @@
+body{
+    background-color: #f0f0f0;
+}
+
+.intro-text{
+    color:navy;
+}
+
+#skills-section {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border: 1px dotted black;
+    margin-top: 20px;
+}
+
+a{
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #551a8b;
+}
+
+a:hover{
+    color: #004080;
+    text-decoration: underline;
+}
+
+#skills-section ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#skills-section li{
+    margin-bottom: 8px;
+}
