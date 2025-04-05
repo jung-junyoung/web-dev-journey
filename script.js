@@ -12,7 +12,7 @@ console.log("Hello, my name is" + myName + " and I am currently" + currentGoal +
 
 // --- DOM Manipulation ---
 // 1. Select the heading element using its ID
-const headingElement = document.getElementById('main-heading');
+const headingElement = document.querySelector("#main-heading");
 headingElement.addEventListener('click', handleHeadingClick);
 
 // 2. Log the selected element object itself
