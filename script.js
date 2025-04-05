@@ -13,9 +13,15 @@ console.log("Hello, my name is" + myName + " and I am currently" + currentGoal +
 // --- DOM Manipulation ---
 // 1. Select the heading element using its ID
 const headingElement = document.getElementById('main-heading');
+headingElement.addEventListener('click', handleHeadingClick);
 
 // 2. Log the selected element object itself
 console.log("Selected Heading Element", headingElement);
 
 // 3. Change the text content of the heading element
 headingElement.textContent = "Welcome to My Learning Journey";
+
+//Define a function to handle the click event
+function handleHeadingClick(){
+    console.log("Heading element was clicked!");
+}
