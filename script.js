@@ -13,6 +13,9 @@ console.log("Hello, my name is" + myName + " and I am currently" + currentGoal +
 // --- DOM Manipulation ---
 // 1. Select the heading element using its ID
 const headingElement = document.querySelector("#main-heading");
+const originalHeadingText = headingElement.textContent;
+console.log("Original heading text stored:", originalHeadingText);
+
 headingElement.addEventListener('click', handleHeadingClick);
 
 // 2. Log the selected element object itself
@@ -22,7 +25,20 @@ console.log("Selected Heading Element", headingElement);
 headingElement.textContent = "Welcome to My Learning Journey";
 
 //Define a function to handle the click event
-function handleHeadingClick(){
+function handleHeadingClick() {
     console.log("Heading element was clicked!");
-    headingElement.textContent = "Ouch! You clicked me!";
-}
+  
+    // Get the CURRENT text content each time the function runs
+    let currentText = headingElement.textContent;
+  
+    // Check if the current text is the 'clicked' state text
+    if (currentText === "You clicked me!") { // Use === for comparison
+      // If it is, change it back to the original text we stored
+      headingElement.textContent = originalHeadingText;
+      console.log("Heading text reverted to original.");
+    } else {
+      // Otherwise (if it's the original text), change it to the 'clicked' state
+      headingElement.textContent = "You clicked me!";
+      console.log("Heading text changed to clicked state.");
+    }
+  }
