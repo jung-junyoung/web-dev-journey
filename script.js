@@ -59,7 +59,7 @@ console.log("No. of skills", mySkills.length);
 console.log("Last Skill:", mySkills[mySkills.length-1]);
 
 
-for (let i = 0; i < mySkills.length; i++){
+for (let i = 0; i < mySkills.length; i = i+1){
   console.log("Skill #" + (i + 1) + ":" + mySkills[i]);
 }
 console.log("--- End of List ---");
