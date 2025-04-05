@@ -24,4 +24,5 @@ headingElement.textContent = "Welcome to My Learning Journey";
 //Define a function to handle the click event
 function handleHeadingClick(){
     console.log("Heading element was clicked!");
+    headingElement.textContent = "Ouch! You clicked me!";
 }
