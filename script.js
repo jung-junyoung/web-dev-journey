@@ -130,3 +130,14 @@ console.log(greetingMessage);
 
 const yearsExperience = calculatingExperience(myInfo.learningSince, currentYear);
 console.log("Approximate years learning", yearsExperience);
+
+
+const skillsListElement = document.querySelector('#skills-section ul');
+skillsListElement.innerHTML = '';
+
+mySkills.forEach(skill => {
+  // V-- PROBLEM IS HERE --V
+  const listItemHTML = `<li>${skill}</li>`; // Using single quotes ' '
+
+  skillsListElement.innerHTML += listItemHTML;
+});
