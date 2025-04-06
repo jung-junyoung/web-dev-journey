@@ -128,5 +128,5 @@ function calculatingExperience(startYear, currentYearParam) {
 const greetingMessage = createGreeting(myName);
 console.log(greetingMessage);
 
-const yearsExpereience = calculatingExperience(myInfo.learningSince, currentYear);
-console.log("Approximate years learning", yearsExpereience);
+const yearsExperience = calculatingExperience(myInfo.learningSince, currentYear);
+console.log("Approximate years learning", yearsExperience);
