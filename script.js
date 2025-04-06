@@ -67,3 +67,66 @@ console.log("--- End of List ---");
 mySkills.forEach(function(skill){
   console.log("*" + skill);
 });
+
+let emptyThing = {};
+
+const userProfile = {
+  name: "Alice",
+  age: 30,
+  isAdmin: false,
+  topics: ["AI", "Ethics"],
+  address: {
+    street: "123 Main St",
+    city: "Anytown"
+  }
+}
+
+console.log(userProfile.name);
+console.log(userProfile.age);
+console.log(userProfile.topics[0]);
+console.log(userProfile.address.city);
+
+console.log(userProfile['isAdmin']);
+let propertyToAccess = 'name';
+console.log(userProfile[propertyToAccess])
+
+userProfile.isAdmin = true;
+userProfile.age = 30;
+userProfile.country = "USA";
+userProfile['Favorite Color'] = 'Blue';
+
+///Practice
+
+const myInfo = {
+  fullName: "Junyoung Jung",
+  goal: "Becoming Full-Stack & PM",
+  learningSince: 2025,
+  currentSkills: mySkills,
+  isCodingNow: true
+}
+
+console.log(myInfo);
+console.log(myInfo.fullName);
+console.log(myInfo['currentSkills']);
+console.log(myInfo.currentSkills[2]);
+
+myInfo.location = "Seoul, South Korea";
+myInfo.isCodingNow = false
+
+console.log(myInfo);
+
+function createGreeting(userName){
+  const message = "Hello and welcome, " + userName + "!";
+  return message
+}
+
+function calculatingExperience(startYear, currentYearParam) {
+  const years = currentYearParam - startYear;
+  return years;
+}
+
+const greetingMessage = createGreeting(myName);
+console.log(greetingMessage);
+
+const yearsExpereience = calculatingExperience(myInfo.learningSince, currentYear);
+console.log("Approximate years learning", yearsExpereience);
