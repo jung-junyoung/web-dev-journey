@@ -141,3 +141,13 @@ mySkills.forEach(skill => {
 
   skillsListElement.innerHTML += listItemHTML;
 });
+
+const allSkillItems = document.querySelectorAll('#skills-section li');
+
+allSkillItems.forEach(item => {
+  console.log("Styling item:", item.textContent);
+
+  item.style.color = 'darkslateblue';
+})
+
+console.log("Finished styling all list items");
