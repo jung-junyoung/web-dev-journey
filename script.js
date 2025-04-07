@@ -170,12 +170,23 @@ function addTask(){
     const newListItem = document.createElement('li'); //create new list item element
     newListItem.textContent = taskText; //set text content of new <li> to the task text
 
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'X';
+    deleteButton.classList.add('delete-btn');
+
+    deleteButton.addEventListener('click', function(){
+      newListItem.remove();
+      console.log("Removed task:", taskText);
+    })
+
+    newListItem.appendChild(deleteButton);
+
 
     newListItem.addEventListener('click', function(){
       newListItem.classList.toggle('completed');
       console.log("Toggle complete status for:", newListItem.textContent);
     });
-    
+
     todoListUL.appendChild(newListItem);
     todoInput.value = '';
 
