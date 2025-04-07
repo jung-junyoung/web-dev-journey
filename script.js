@@ -151,3 +151,38 @@ allSkillItems.forEach(item => {
 })
 
 console.log("Finished styling all list items");
+
+
+const todoInput = document.querySelector('#todo-input');
+const addTodoButton = document.querySelector('#add-todo-btn');
+const todoListUL = document.querySelector('#todo-list')
+
+console.log('Selected Elements:', todoInput, addTodoButton, todoListUL);
+
+addTodoButton.addEventListener('click', addTask);
+
+function addTask(){
+  const taskText = todoInput.value.trim();
+  console.log("Button clicked, task text:", taskText);
+
+  if (taskText !== ''){
+
+    const newListItem = document.createElement('li'); //create new list item element
+    newListItem.textContent = taskText; //set text content of new <li> to the task text
+
+
+    newListItem.addEventListener('click', function(){
+      newListItem.classList.toggle('completed');
+      console.log("Toggle complete status for:", newListItem.textContent);
+    });
+    
+    todoListUL.appendChild(newListItem);
+    todoInput.value = '';
+
+    console.log("Task added to the list.");
+
+  } else{
+    console.log("Task input is empty, not adding.");
+    alert("Please enter a task!");
+  }
+}

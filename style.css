@@ -83,3 +83,9 @@ a:hover{
 #todo-list li:last-child{
     border-bottom: none;
 }
+
+#todo-list li.completed{
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+}
