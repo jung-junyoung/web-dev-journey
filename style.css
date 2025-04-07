@@ -41,3 +41,45 @@ a:hover{
 #skills-section li{
     margin-bottom: 8px;
 }
+
+#todo-app {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+#todo-input{
+    padding: 8px;
+    margin-right: 8px;
+    min-width: 200px;
+}
+
+#add-todo-btn{
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#add-todo-btn:hover{
+    background-color: #3a2f70;
+}
+
+#todo-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#todo-list li{
+    padding: 10px 5px;
+    border-bottom: 1px dotted #ccc;
+}
+
+#todo-list li:last-child{
+    border-bottom: none;
+}
