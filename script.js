@@ -66,6 +66,10 @@ const [firstSkillAgain, ...remainingSkills] = mySkills;
 console.log(firstSkillAgain);
 console.log(remainingSkills);
 
+const futureSkills = ['React','Node.js','Python Backend'];
+
+const allKnownAndFutureSkills = [...mySkills, ...futureSkills];
+console.log(allKnownAndFutureSkills);
 
 for (let i = 0; i < mySkills.length; i = i+1){
   console.log("Skill #" + (i + 1) + ":" + mySkills[i]);
