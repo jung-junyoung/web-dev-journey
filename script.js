@@ -58,6 +58,14 @@ console.log("First Skill:", mySkills[0]);
 console.log("No. of skills", mySkills.length);
 console.log("Last Skill:", mySkills[mySkills.length-1]);
 
+const [skill1, skill2] = mySkills;
+console.log(skill1);
+console.log(skill2);
+
+const [firstSkillAgain, ...remainingSkills] = mySkills;
+console.log(firstSkillAgain);
+console.log(remainingSkills);
+
 
 for (let i = 0; i < mySkills.length; i = i+1){
   console.log("Skill #" + (i + 1) + ":" + mySkills[i]);
@@ -104,6 +112,10 @@ const myInfo = {
   currentSkills: mySkills,
   isCodingNow: true
 }
+
+const {fullName, goal} = myInfo;
+console.log(fullName);
+console.log(goal);
 
 console.log(myInfo);
 console.log(myInfo.fullName);
