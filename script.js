@@ -71,6 +71,7 @@ const futureSkills = ['React','Node.js','Python Backend'];
 const allKnownAndFutureSkills = [...mySkills, ...futureSkills];
 console.log(allKnownAndFutureSkills);
 
+
 for (let i = 0; i < mySkills.length; i = i+1){
   console.log("Skill #" + (i + 1) + ":" + mySkills[i]);
 }
@@ -213,3 +214,10 @@ function addTask(){
     alert("Please enter a task!");
   }
 }
+
+function logMyTopThree(skillA, skillB, skillC){
+  console.log("Top 3:", skillA, skillB, skillC);
+}
+
+const topThree = logMyTopThree(...mySkills);
+
