@@ -1,3 +1,7 @@
+import { createGreeting, MODULE_MESSAGE } from "./helpers.js";
+
+console.log(MODULE_MESSAGE);
+
 console.log("Hello from script.js!")
 
 const myName = "Junyoung Jung";
@@ -131,11 +135,6 @@ myInfo.location = "Seoul, South Korea";
 myInfo.isCodingNow = false
 
 console.log(myInfo);
-
-function createGreeting(userName){
-  const message = "Hello and welcome, " + userName + "!";
-  return message
-}
 
 function calculatingExperience(startYear, currentYearParam) {
   const years = currentYearParam - startYear;
