@@ -136,10 +136,8 @@ myInfo.isCodingNow = false
 
 console.log(myInfo);
 
-function calculatingExperience(startYear, currentYearParam) {
-  const years = currentYearParam - startYear;
-  return years;
-}
+const calculatingExperience = (startYear, currentYearParam) => currentYearParam - startYear;
+console.log(calculatingExperience(myInfo.learningSince, currentYear));
 
 const greetingMessage = createGreeting(myName);
 console.log(greetingMessage);
@@ -220,3 +218,5 @@ function logMyTopThree(skillA, skillB, skillC){
 
 const topThree = logMyTopThree(...mySkills);
 
+const getSkillMessage = skillName => `I want to master ${skillName}!`;
+console.log(getSkillMessage('React'));
